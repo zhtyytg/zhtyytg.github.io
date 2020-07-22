@@ -1,11 +1,7 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/
+zhtyytg@github.io/
 scaffolds/
 source/
 themes/
 .vscode/
+前端开发/
+pulutemp/
