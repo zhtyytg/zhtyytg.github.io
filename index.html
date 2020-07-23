@@ -146,7 +146,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zhtyytg.github.io/2020/07/22/git/">
+    <link itemprop="mainEntityOfPage" href="https://zhtyytg.github.io/2020/07/23/01-HTML5%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -160,7 +160,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/07/22/git/" class="post-title-link" itemprop="url">GIT常用命令和参数用法</a>
+            <a href="/2020/07/23/01-HTML5%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3/" class="post-title-link" itemprop="url">Web前端入门</a>
         </h2>
 
         <div class="post-meta">
@@ -171,8 +171,308 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-07-22 12:09:17 / 修改时间：17:07:22" itemprop="dateCreated datePublished" datetime="2020-07-22T12:09:17+08:00">2020-07-22</time>
+              <time title="创建时间：2020-07-23 12:42:55 / 修改时间：12:43:12" itemprop="dateCreated datePublished" datetime="2020-07-23T12:42:55+08:00">2020-07-23</time>
             </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="HTML5入门"><a href="#HTML5入门" class="headerlink" title="HTML5入门"></a>HTML5入门</h2><h2 id="网页的基本组成"><a href="#网页的基本组成" class="headerlink" title="网页的基本组成"></a>网页的基本组成</h2><p>文本、超链接、二进制文件(图片、音频、视频)等==元素==组成</p>
+<h2 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a>什么是HTML</h2><p>hyper text markup language 超文本标记语言<br>用标记标签组成网页<br>采用超文本方式将各个文件元素串联在一起</p>
+<h2 id="常用的浏览器-内核"><a href="#常用的浏览器-内核" class="headerlink" title="常用的浏览器(内核)"></a>常用的浏览器(内核)</h2><p>浏览器内核(渲染引擎)：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面</p>
+<p>chrome(Blink 是WebKit的分支)、firefox(Gecko)、IE(Trident)、Edege、Safari(WebKit)、Opera(Blink)、国产浏览器一般采用WebKit或Blink</p>
+<h2 id="Web标准的三大组成部分HTML、CSS、JS"><a href="#Web标准的三大组成部分HTML、CSS、JS" class="headerlink" title="Web标准的三大组成部分HTML、CSS、JS"></a>Web标准的三大组成部分<del>HTML、CSS、JS</del></h2><p>==Web标准==是W3C(万维网联盟)组织和其他标准化组织制定的一系列标准的集合，目的是统一不同浏览器的页面，降低软硬件限制</p>
+<p>==Web标准==是由结构Structure、表现Presentation、行为Behavior组成的，结构&gt;&gt;HTML，表现&gt;&gt;CSS，行为&gt;&gt;javascript</p>
+<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
+<li>标签的书写注意规范</li>
+<li>写出HTML骨架标签</li>
+<li>写出超链接标签</li>
+<li>写出图片标签并说出alt和title的区别</li>
+<li>说出相对路径的三种形式</li>
+</ol>
+<h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><h3 id="HTML语法规范：标签闭合"><a href="#HTML语法规范：标签闭合" class="headerlink" title="HTML语法规范：标签闭合"></a>HTML语法规范：标签闭合</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="HTML基本结构标签"><a href="#HTML基本结构标签" class="headerlink" title="HTML基本结构标签"></a>HTML基本结构标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!--	页面中最大的标签，称为root标签	--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--	文档的头部	--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span><span class="comment">&lt;!--	文档的标签，页面标签名	--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--	文档内容，存放页面基本内容	--&gt;</span></span><br><span class="line">        键盘敲烂，工资过万</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><p>dream wave、Hbuilder、VS code、Sublime Text。。。</p>
+<h3 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h3><h4 id="标题标签-lt-h1-gt-lt-h6-gt"><a href="#标题标签-lt-h1-gt-lt-h6-gt" class="headerlink" title="标题标签&lt;h1&gt; - &lt;h6&gt;"></a>标题标签&lt;h1&gt; - &lt;h6&gt;</h4><ol>
+<li>文字会变大</li>
+<li>标题独占一行</li>
+</ol>
+<h4 id="段落标签和换行标签"><a href="#段落标签和换行标签" class="headerlink" title="段落标签和换行标签"></a>段落标签和换行标签</h4><ul>
+<li><p>段落标签&lt;p&gt; - &lt;/p&gt;</p>
+<p>段落和段落中会有较大缝隙</p>
+</li>
+<li><p>换行标签&lt;br&gt;</p>
+</li>
+</ul>
+<h4 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h4><ol>
+<li>加粗&lt;strong&gt;</li>
+<li>倾斜&lt;em&gt;</li>
+<li>删除线&lt;del&gt;</li>
+<li>下划线&lt;ins&gt;</li>
+</ol>
+<h4 id="div和span标签：普通的盒子元素"><a href="#div和span标签：普通的盒子元素" class="headerlink" title="div和span标签：普通的盒子元素"></a>div和span标签：普通的盒子元素</h4><h4 id="图像标签-lt-img-gt"><a href="#图像标签-lt-img-gt" class="headerlink" title="图像标签&lt;img&gt;"></a>图像标签&lt;img&gt;</h4><ol>
+<li>src 引用路径</li>
+<li>alt 加载失败时显示的文字</li>
+<li>title 鼠标移动到图片上方时显示文字</li>
+<li>height、width 宽高</li>
+<li>border 边框设置</li>
+</ol>
+<h4 id="链接标签-lt-a-gt"><a href="#链接标签-lt-a-gt" class="headerlink" title="链接标签&lt;a&gt;"></a>链接标签&lt;a&gt;</h4><ol>
+<li>href URL地址</li>
+<li>target URL打开方式，默认_self 在当前标签打开，_blank 在新标签打开</li>
+<li>锚点链接 href = “#目标元素ID” 快速跳转到页面某个元素的位置</li>
+</ol>
+<h3 id="HTML中的注释和特殊字符"><a href="#HTML中的注释和特殊字符" class="headerlink" title="HTML中的注释和特殊字符"></a>HTML中的注释和特殊字符</h3><h2 id="CSS3基础"><a href="#CSS3基础" class="headerlink" title="CSS3基础"></a>CSS3基础</h2><h2 id="H5C3提高"><a href="#H5C3提高" class="headerlink" title="H5C3提高"></a>H5C3提高</h2><h2 id="项目-品优购电商网站"><a href="#项目-品优购电商网站" class="headerlink" title="项目-品优购电商网站"></a>项目-品优购电商网站</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhtyytg.github.io/2020/07/23/02-%E7%94%9F%E4%BA%A7%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zhtyytg">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="狗窝">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/23/02-%E7%94%9F%E4%BA%A7%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">win10生产工具目录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-23 12:38:22 / 修改时间：12:39:25" itemprop="dateCreated datePublished" datetime="2020-07-23T12:38:22+08:00">2020-07-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-git"><a href="#1-git" class="headerlink" title="1. git"></a>1. git</h2><h3 id="1-1-install"><a href="#1-1-install" class="headerlink" title="1.1. install"></a>1.1. install</h3><ul>
+<li>官网下载git-for-windows</li>
+<li>使用scoop包管理下载   √<br>  <code>scoop install git -g</code> <em>-g</em> 表示全局安装</li>
+</ul>
+<h3 id="1-2-setting"><a href="#1-2-setting" class="headerlink" title="1.2. setting"></a>1.2. setting</h3><ul>
+<li>打开git-bash，设置你的名字和email,这些是在提交commit时的签名</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config –global user.name “YourName”</span><br><span class="line">git config –global user.email “YourEmail@xxx.com”</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成ssh-key</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "YourEmail@xxx.com"</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>连接客户端与github</p>
+<p>  生成的ssh文件自动保存在[C:\Users\YourUserName.ssh]<br>  打开此目录下的<strong>id_rsa.pub</strong>文件，选中所有内容复制下来<br>  打开github登录，右上角找到setting，点击左侧SSH and GPG Key<br>  在SSH keys一栏中添加新的key，粘贴并保存</p>
+</li>
+<li><p>测试是否成功</p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br><span class="line"><span class="meta">#</span><span class="bash"> 出现提示</span></span><br><span class="line">Hi zhtyytg! You've successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">Connection to github.com closed.</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-extension"><a href="#1-3-extension" class="headerlink" title="1.3. extension"></a>1.3. extension</h3><h4 id="git-bash加入到vscode终端中"><a href="#git-bash加入到vscode终端中" class="headerlink" title="git-bash加入到vscode终端中"></a>git-bash加入到vscode终端中</h4><p>只需把git根目录下的bin目录路径&lt;D:\GlobalScoopApps\apps\git\2.27.0.windows.1\bin&gt;新建到系统变量中</p>
+<h4 id="git-status-中文字符被转义的问题解决方法"><a href="#git-status-中文字符被转义的问题解决方法" class="headerlink" title="git status 中文字符被转义的问题解决方法"></a>git status 中文字符被转义的问题解决方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.quotepath <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-使用技巧"><a href="#1-使用技巧" class="headerlink" title="1. 使用技巧"></a>1. 使用技巧</h4><h2 id="2-vscode"><a href="#2-vscode" class="headerlink" title="2. vscode"></a>2. vscode</h2><h3 id="2-1-install"><a href="#2-1-install" class="headerlink" title="2.1. install"></a>2.1. install</h3><ul>
+<li>官网下载vscode</li>
+<li>使用scoop包管理下载   √<br>  <code>scoop install vscode -g</code> <em>-g</em> 表示全局安装</li>
+</ul>
+<h3 id="2-2-setting"><a href="#2-2-setting" class="headerlink" title="2.2. setting"></a>2.2. setting</h3><p>官网安装无需配置，scoop下载后进入程序根目录，找到install注册表双击确定可以在右键的菜单中添加“Open With Code”</p>
+<h3 id="2-3-extension"><a href="#2-3-extension" class="headerlink" title="2.3. extension"></a>2.3. extension</h3><h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>Chinese (Simplified) Language Pack for Visual Studio Code</p>
+<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>Atom One Dark Theme</p>
+<h4 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h4><p>Code Runner<br>Code Spell Checker<br>Prettier - Code formatter</p>
+<h4 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h4><p>Markdown All in One<br>Markdown Preview Enhanced<br>Markdown Shortcuts<br>*markdownlint &nbsp; ## 可选的markdown语法检查<br>Paste Image</p>
+<h4 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h4><p>open in browser</p>
+<h2 id="3-chrome"><a href="#3-chrome" class="headerlink" title="3. chrome"></a>3. chrome</h2><h3 id="3-1-install"><a href="#3-1-install" class="headerlink" title="3.1. install"></a>3.1. install</h3><p>下载长期稳定版本<br><a href="https://www.google.cn/chrome/" target="_blank" rel="noopener">https://www.google.cn/chrome/</a> √<br><a href="https://www.google.com/chrome/" target="_blank" rel="noopener">https://www.google.com/chrome/</a></p>
+<h3 id="3-2-setting"><a href="#3-2-setting" class="headerlink" title="3.2. setting"></a>3.2. setting</h3><p>个人喜好<br><a href="chrome://settings/">chrome://settings/</a><br>调出主页按钮，设为baidu<br>显示书签栏<br>地址栏搜索引擎Google<br>启动时默认打开baidu<br>…</p>
+<h3 id="3-3-extension"><a href="#3-3-extension" class="headerlink" title="3.3. extension"></a>3.3. extension</h3><p>IDM插件<br>OmegaSwitch<br>Separate Window<br>…</p>
+<h2 id="4-nodejs"><a href="#4-nodejs" class="headerlink" title="4. nodejs"></a>4. nodejs</h2><h3 id="4-1-install"><a href="#4-1-install" class="headerlink" title="4.1. install"></a>4.1. install</h3><ul>
+<li>官网下载</li>
+<li>使用scoop包管理下载 √<br><code>scoop install nodejs-lts -g</code> <em>-g</em> 表示全局安装</li>
+<li>在安装目录下新建两个文件夹【node_global】和【node_cache】<br>打开cmd命令窗口，输入<code>npm config set prefix &quot;node路径\node_global&quot;</code><br>和<code>npm config set cache  &quot;node路径\node_cache&quot;</code></li>
+<li>测试node安装是否成功<br>在命令行中输入<code>node --version</code>，得到版本号v12.18.2<br>在命令行中输入<code>npm --version</code>，得到版本号6.14.5<br>成功</li>
+</ul>
+<h3 id="4-2-setting"><a href="#4-2-setting" class="headerlink" title="4.2. setting"></a>4.2. setting</h3><h3 id="4-3-extension"><a href="#4-3-extension" class="headerlink" title="4.3. extension"></a>4.3. extension</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhtyytg.github.io/2020/07/23/01-win10%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zhtyytg">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="狗窝">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/23/01-win10%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">SCOOP体验</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-23 12:38:19 / 修改时间：12:40:55" itemprop="dateCreated datePublished" datetime="2020-07-23T12:38:19+08:00">2020-07-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-安装包管理软件-Scoop"><a href="#1-安装包管理软件-Scoop" class="headerlink" title="1.安装包管理软件 Scoop"></a>1.安装包管理软件 Scoop</h2><h3 id="1-0-尝试无代理下载"><a href="#1-0-尝试无代理下载" class="headerlink" title="1.0 尝试无代理下载"></a>1.0 尝试无代理下载</h3><h4 id="打开-powershell"><a href="#打开-powershell" class="headerlink" title="打开 powershell"></a>打开 powershell</h4><h4 id="输入更改策略代码"><a href="#输入更改策略代码" class="headerlink" title="输入更改策略代码"></a>输入更改策略代码</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">set-executionpolicy remotesigned -scope currentuser</span><br><span class="line">执行策略更改</span><br><span class="line"></span><br><span class="line">执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170</span><br><span class="line">中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?</span><br><span class="line">[Y] 是(Y)  [A] 全是(A)  [N] 否(N)  [L] 全否(L)  [S] 暂停(S)  [?] 帮助 (默认值为“N”): Y</span><br></pre></td></tr></table></figure>
+
+<h4 id="将-Scoop-安装到自定义目录-命令行方式"><a href="#将-Scoop-安装到自定义目录-命令行方式" class="headerlink" title="将 Scoop 安装到自定义目录(命令行方式)"></a>将 Scoop 安装到自定义目录(命令行方式)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">env:SCOOP=<span class="string">'D:\Applications\Scoop'</span></span></span><br><span class="line">[Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')</span><br></pre></td></tr></table></figure>
+
+<p># 安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iex (new-object net.webclient).downloadstring('https://get.scoop.sh')</span><br></pre></td></tr></table></figure>
+
+<p># 报错：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">使用“1”个参数调用“DownloadString”时发生异常:“未能解析此远程名称: 'raw.githubusercontent.com'”</span><br><span class="line"><span class="meta">&gt;</span><span class="bash">所在位置 行:1 字符: 1</span></span><br><span class="line">+ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')</span><br><span class="line">+   &gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><br><span class="line">    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException</span><br><span class="line">    + FullyQualifiedErrorId : WebException</span><br></pre></td></tr></table></figure>
+
+<p>实际测试网页<br>发现地址重定向到<a href="https://raw.githubusercontent.com/lukesampson/scoop/master/bin/install.ps1" target="_blank" rel="noopener">https://raw.githubusercontent.com/lukesampson/scoop/master/bin/install.ps1</a>  </p>
+<p>尝试替换网址</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iex(new-objectnet.webclient).downloadstring('https://raw.githubusercontent.com/lukesampson/scoop/master/bin/install.ps1')</span><br></pre></td></tr></table></figure>
+
+<p>失败，依旧提示无法解析，尝试先下载科学上网工具</p>
+<h3 id="1-1-下载配置梯子"><a href="#1-1-下载配置梯子" class="headerlink" title="1.1 下载配置梯子"></a>1.1 下载配置梯子</h3><h4 id="下载代理客户端-clash-for-windows"><a href="#下载代理客户端-clash-for-windows" class="headerlink" title="下载代理客户端 clash for windows"></a>下载代理客户端 clash for windows</h4><p># jiyoucloud 裂开了<br># 重新找了个代理服务器<br>网址<a href="https://portal.shadowsocks.nz/index.php" target="_blank" rel="noopener">https://portal.shadowsocks.nz/index.php</a>，20美元1年，约142RMB</p>
+<h3 id="1-2-尝试重新安装-scoop"><a href="#1-2-尝试重新安装-scoop" class="headerlink" title="1.2 尝试重新安装 scoop"></a>1.2 尝试重新安装 scoop</h3><p># 重复之前 powershell 代码，重新安装 scoop 成功</p>
+<h4 id="将-Scoop-配置为将全局程序安装到自定义目录-SCOOP-GLOBAL-命令行方式"><a href="#将-Scoop-配置为将全局程序安装到自定义目录-SCOOP-GLOBAL-命令行方式" class="headerlink" title="将 Scoop 配置为将全局程序安装到自定义目录 SCOOP_GLOBAL(命令行方式)"></a>将 Scoop 配置为将全局程序安装到自定义目录 SCOOP_GLOBAL(命令行方式)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">env:SCOOP_GLOBAL=<span class="string">'D:\GlobalScoopApps'</span></span></span><br><span class="line">[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop install git</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加-extras-仓库"><a href="#添加-extras-仓库" class="headerlink" title="添加 extras 仓库"></a>添加 extras 仓库</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop bucket add extras</span><br></pre></td></tr></table></figure>
+
+<h4 id="搜索官方维护的仓库"><a href="#搜索官方维护的仓库" class="headerlink" title="搜索官方维护的仓库"></a>搜索官方维护的仓库</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop bucket known</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加官方仓库"><a href="#添加官方仓库" class="headerlink" title="添加官方仓库"></a>添加官方仓库</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scoop update</span><br><span class="line">scoop bucket add versions jetbrains</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置aria2多线程下载"><a href="#配置aria2多线程下载" class="headerlink" title="配置aria2多线程下载"></a>配置aria2多线程下载</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scoop install aria2</span><br><span class="line">scoop config aria2-enabled true # default: true</span><br><span class="line">scoop config aria2-retry-wait 5 # default: 2</span><br><span class="line">scoop config aria2-split 5      # default: 5</span><br><span class="line">scoop config aria2-max-connection-per-server 10   # default: 5</span><br><span class="line">scoop config aria2-min-split-size] 2M   # default: 5M</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhtyytg.github.io/2020/07/22/03-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zhtyytg">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="狗窝">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/22/03-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">GIT常用命令和参数用法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-22 12:09:17" itemprop="dateCreated datePublished" datetime="2020-07-22T12:09:17+08:00">2020-07-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-23 12:38:40" itemprop="dateModified" datetime="2020-07-23T12:38:40+08:00">2020-07-23</time>
+              </span>
 
           
 
@@ -373,7 +673,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
